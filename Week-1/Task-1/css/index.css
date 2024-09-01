@@ -1064,7 +1064,95 @@ footer .down span {
     align-items:center;
     width: 100%;
 }
+footer .up{
+    flex-direction: column;
 }
+
+footer .up .left{
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+}
+footer .up .right{
+    width: 100%;
+    align-items: center;
+
+}
+
+footer .down{
+    gap: 50px;
+}
+
+footer .down ul{
+    margin: 0px;
+}
+
+footer .down span{
+    margin: 0px;
+}
+footer .down{
+    display: flex;
+    flex-direction: column;
+}
+.woc .right {
+    height: auto;
+}
+
+.woc .right  .text{
+font-size: 15px;
+width: 100%;
+line-height: 40px;
+}
+
+.woc .right .bottom{
+gap: 20px;
+display: flex;
+flex-direction: column;
+}
+
+
+}
+
+@media  (max-width: 1125px) {
+ 
+    .values .wrap{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .values .wrap .box{
+        align-items:center;
+        width: 100%;
+    }
+}
+
+@media  (max-width: 1300px) {
+
+    .enrgy{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+}
+.enrgy .left{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.enrgy .right{
+    margin-right: 40px;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.enrgy .right .box{
+    width: 100%;
+}
+   
+}
+
 
 
 
