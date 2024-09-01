@@ -97,6 +97,7 @@ body{
 
 header{
     color: #eee;
+    
 }
 /*! navbar styling */
 .navbar{
@@ -163,6 +164,8 @@ cursor: pointer;
     width:100%;
     height: 650px;
     background-image: url('../images/solar-panels-meadow\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -456,6 +459,7 @@ transform: scale(1.2);}
 }
 
 .repairs .main{
+    text-align: center;
     width: 60%;
     height: 60%;
     color: #eee;
@@ -744,7 +748,6 @@ margin-bottom: 40px;
 
 footer{
     background-color: #283646;
-
     padding: 70px;
 }
 
@@ -757,6 +760,7 @@ footer .up{
 }
 
 footer .up .left {
+    width: 50%;
     margin-left: 70px;
     
 }
@@ -764,7 +768,7 @@ footer .up .left {
 
 
 footer .up .left .photo{
-    width: 200px;
+    width: 40%;
     height: 64px;
     background-color: #D9E7F7;
 }
@@ -794,6 +798,7 @@ footer .up .left ul li a:hover{
 }
 
 footer .up .right{
+    width: 50%;
     height: 150px;
     margin-right: 70px;
 }
@@ -804,7 +809,7 @@ footer .up .right span{
 }
 
 footer .up .right form{
-    width: 500px;
+    width: 100%;
     height: 50px;
     display: flex;
     position: relative;
@@ -847,6 +852,7 @@ footer .down{
     margin-top: 50px ;
     width: 100%;
     color: #797F84;
+
 }
 
 footer .down ul{
@@ -892,7 +898,7 @@ footer .down span {
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 .y-line{
@@ -903,7 +909,7 @@ footer .down span {
     
 }
 
-@media (max-width : 768px) {
+@media (max-width : 992px) {
     .menu{
         display: block;
     }
@@ -923,7 +929,16 @@ footer .down span {
         justify-content: space-between;
     }
 
+    .frindliest .image .frame{
+        width: 80%;
+        height: 20%;
+        bottom:50%;
+        left: -10%;
+    }
 
+    .repairs .main{
+        height: auto;
+    }
     .enrgy{
             flex-direction: column;
             display: flex;
@@ -954,12 +969,30 @@ footer .down span {
         flex-direction: column;
         align-items: center;
     }
+
+    
     .woc .left{
         width: 100%;
         margin-left: 0px;
         align-items: center;
         text-align: center;
     }
+
+    .woc .right {
+        height: auto;
+    }
+    
+.woc .right  .text{
+    font-size: 15px;
+    width: 100%;
+    line-height: 40px;
+}
+
+.woc .right .bottom{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 
     footer .up{
@@ -970,6 +1003,11 @@ footer .down span {
         width: 100%;
         align-items: center;
         margin: 0px;
+    }
+    footer .up .right{
+        width: 100%;
+        align-items: center;
+
     }
 
     footer .down{
@@ -983,4 +1021,44 @@ footer .down span {
     footer .down span{
         margin: 0px;
     }
+    .power{
+        height: auto;
+    }
+
+    
 }
+@media (max-width: 580px) {
+
+    footer .down{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .woc .right .bottom {
+        height: auto;
+    }
+
+}
+
+
+.upper{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: fixed;
+    right: 5%;
+    top: 70%;
+
+    background-color: rgb(214, 189, 24);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
