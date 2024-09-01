@@ -93,10 +93,12 @@ body{
     text-transform: capitalize;
 }
 
+
 /* header styling */
 
 header{
     color: #eee;
+    min-height: 900px;
     
 }
 /*! navbar styling */
@@ -162,7 +164,7 @@ cursor: pointer;
 
 .header-section{
     width:100%;
-    height: 650px;
+    height: 800px;
     background-image: url('../images/solar-panels-meadow\ 1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,7 +250,6 @@ font-size: 22px;
 /*! styling frindliest section */
 
 .frindliest{
-
     gap: 15%;
 }
 
@@ -266,15 +267,15 @@ font-size: 22px;
 }
 
 .frindliest .text ul{
-    
+    width: 100%;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
 }
 .frindliest .text ul li{
+    min-width: 350px;
     height: 32px;
     margin-left: 35px;
-    width: 500px;
     font-size: 20px;
     position: relative;
 }
@@ -753,23 +754,19 @@ footer{
 
 footer .up{
     width: 100%;
-
     border-bottom: 1px solid #797F84;
     padding-bottom: 50px;
 
 }
 
 footer .up .left {
-    width: 50%;
-    margin-left: 70px;
-    
+    width: 50%;    
 }
 
 
 
 footer .up .left .photo{
     width: 40%;
-    height: 64px;
     background-color: #D9E7F7;
 }
 
@@ -778,16 +775,19 @@ footer .up .left .photo img{
 }
 
 footer .up .left ul{
+    width: 90%;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
     margin-top: 60px;
+    gap: 20px;
+    
 }
 
-
-footer .up .left ul li {
-    margin-right: 60px;
+footer .up .left ul li{
+    width: 20%;
 }
+
 
 footer .up .left ul li a{
     width: 100%;
@@ -856,6 +856,7 @@ footer .down{
 }
 
 footer .down ul{
+    
     padding: 0px;
     margin: 0px;
     margin-left: 70px;
@@ -909,7 +910,7 @@ footer .down span {
     
 }
 
-@media (max-width : 992px) {
+@media (max-width : 768px) {
     .menu{
         display: block;
     }
@@ -918,6 +919,10 @@ footer .down span {
         display: none;
     }
 
+    .header-section{
+        height:920px;
+
+    }
     .solar .wrap .boxes {
         width: 80%;
         gap: 30px;
@@ -939,28 +944,7 @@ footer .down span {
     .repairs .main{
         height: auto;
     }
-    .enrgy{
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        
-    }
-    .enrgy .left{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .enrgy .right{
-        margin-right: 40px;
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .enrgy .right .box{
-        width: 100%;
-    }
+    
 
     .values .wrap{
         flex-direction: column;
@@ -1027,22 +1011,62 @@ footer .down span {
 
     
 }
-@media (max-width: 580px) {
+@media (max-width: 589px) {
 
+ 
     footer .down{
         display: flex;
         flex-direction: column;
     }
-}
-
-
-@media (min-width: 768px) and (max-width: 992px) {
     
-    .woc .right .bottom {
-        height: auto;
-    }
-
 }
+
+@media   (max-width: 992px) {
+
+    .enrgy{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+}
+.enrgy .left{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.enrgy .right{
+    margin-right: 40px;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.enrgy .right .box{
+    width: 100%;
+}
+.solar .wrap .boxes {
+    width: 80%;
+    gap: 30px;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+.values .wrap{
+    width: 100%;
+    flex-direction: column;
+}
+
+.values .wrap .box{
+    align-items:center;
+    width: 100%;
+}
+}
+
+
 
 
 .upper{
