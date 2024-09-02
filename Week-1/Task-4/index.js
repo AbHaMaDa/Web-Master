@@ -16,3 +16,12 @@ upper.addEventListener("click",function(){
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+
+let bars = document.querySelector(".bars");
+let list = document.querySelector(".list-screen");
+
+bars.addEventListener("click",()=>{
+    list.classList.toggle("hide");
+})

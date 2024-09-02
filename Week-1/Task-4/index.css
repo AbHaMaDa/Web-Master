@@ -125,5 +125,36 @@ body {
     cursor: pointer;
 }
 .hide{
+    display: none  !important;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+.bars{
     display: none;
+    position: relative;
+ 
+}
+
+.list-screen{
+    position: absolute;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -9rem;
+    left: -2rem;;
+}
+
+@media (max-width: 768px) {
+    .list{
+        display: none !important;
+    }
+
+    .bars{display: block;}
 }
